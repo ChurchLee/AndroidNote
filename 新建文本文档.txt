@@ -1,0 +1,149 @@
+
+Administrator@PC-201507301550 MINGW64 ~/Desktop/LearnAndroid
+$ git clone
+You must specify a repository to clone.
+
+usage: git clone [<options>] [--] <repo> [<dir>]
+
+    -v, --verbose         be more verbose
+    -q, --quiet           be more quiet
+    --progress            force progress reporting
+    -n, --no-checkout     don't create a checkout
+    --bare                create a bare repository
+    --mirror              create a mirror repository (implies bare)
+    -l, --local           to clone from a local repository
+    --no-hardlinks        don't use local hardlinks, always copy
+    -s, --shared          setup as shared repository
+    --recursive           initialize submodules in the clone
+    --recurse-submodules  initialize submodules in the clone
+    --template <template-directory>
+                          directory from which templates will be used
+    --reference <repo>    reference repository
+    --dissociate          use --reference only while cloning
+    -o, --origin <name>   use <name> instead of 'origin' to track upstream
+    -b, --branch <branch>
+                          checkout <branch> instead of the remote's HEAD
+    -u, --upload-pack <path>
+                          path to git-upload-pack on the remote
+    --depth <depth>       create a shallow clone of that depth
+    --single-branch       clone only one branch, HEAD or --branch
+    --separate-git-dir <gitdir>
+                          separate git dir from working tree
+    -c, --config <key=value>
+                          set config inside the new repository
+
+
+Administrator@PC-201507301550 MINGW64 ~/Desktop/LearnAndroid
+$
+
+Administrator@PC-201507301550 MINGW64 ~/Desktop/LearnAndroid
+$ git clone https://github.com/miomin/AndroidDifficultAnalysis
+Cloning into 'AndroidDifficultAnalysis'...
+remote: Counting objects: 128, done.
+remote: Total 128 (delta 0), reused 0 (delta 0), pacRek-reused 128
+Receiving objects: 100% (128/128), 56.18 KiB | 27.00 KiB/s, done.
+Resolving deltas: 100% (58/58), done.
+Checking connectivity... done.
+
+Administrator@PC-201507301550 MINGW64 ~/Desktop/LearnAndroid
+$ git push origin master
+fatal: Not a git repository (or any of the parent directories): .git
+
+Administrator@PC-201507301550 MINGW64 ~/Desktop/LearnAndroid
+$ git init
+Initialized empty Git repository in C:/Users/Administrator/Desktop/LearnAndroid/.git/
+
+Administrator@PC-201507301550 MINGW64 ~/Desktop/LearnAndroid (master)
+$ rm -rf .git
+
+Administrator@PC-201507301550 MINGW64 ~/Desktop/LearnAndroid
+$ ls
+ActivityLifeCycle/
+ActivityLifeCycle.docx
+Android activity四大启动模式详解 - Android移动开发技术文章_手机开发 - 红黑联盟.pdf
+Android 命名规范 （提高代码可以读性） - 未来之路 的专栏 - 博客频道 - CSDN.pdf
+AndroidDifficultAnalysis/
+Android中Serializable和Parcelable序列化对象详解_Android_脚本之家.pdf
+ExpandableListViewAndForResult/
+ForResult/
+git操作.docx
+HelloAndroid/
+LaunchMode/
+note.txt
+StartActivityForResult/
+TestExpandableListView/
+第十章：Intent详解 - 自助者天助 - 博客园.pdf
+原始套接字.pdf
+
+Administrator@PC-201507301550 MINGW64 ~/Desktop/LearnAndroid
+$ cd AndroidDifficultAnalysis
+
+Administrator@PC-201507301550 MINGW64 ~/Desktop/LearnAndroid/AndroidDifficultAnalysis (master)
+$ ls
+01.谈谈你对Application类的理解.md
+02.Android为什么要设计出Bundle而不是直接使用HashMap来进行数据传递.md
+03.谈谈你对Activity生命周期的理解.md
+04.Android中IPC通信的方式有哪些？使用场景是什么？.md
+05.Android中View的触摸事件涉及到哪些方法？他们之间有什么关系？.md
+06.缓存文件可以放在哪里？它们各自的特点是什么？.md
+07.应用内切换主题有哪些方案可以实现.md
+08.有什么便捷的方式实现activity变暗的效果.md
+09.SharedPreference在使用过程中有什么注意点？.md
+10.ART、JIT、AOT、Dalvik之间有什么关系？.md
+11.android中常见的设计模式有哪些？.md
+12.谈谈对Android中的消息机制的理解.md
+13.Sqlite有哪些可以优化的地方.md
+14.如何解决『65535』问题.md
+README.md
+写作模板.md
+
+Administrator@PC-201507301550 MINGW64 ~/Desktop/LearnAndroid/AndroidDifficultAnalysis (master)
+$ git push origin master
+error: unable to read askpass response from 'C:/Program Files/Git/mingw64/libexec/git-core/git-gui--askpass'
+Username for 'https://github.com':
+error: unable to read askpass response from 'C:/Program Files/Git/mingw64/libexec/git-core/git-gui--askpass'
+Password for 'https://github.com':
+
+
+remote: Anonymous access to miomin/AndroidDifficultAnalysis.git denied.
+fatal: Authentication failed for 'https://github.com/miomin/AndroidDifficultAnalysis/'
+
+
+
+Administrator@PC-201507301550 MINGW64 ~/Desktop/LearnAndroid/AndroidDifficultAnalysis (master)
+$
+
+Administrator@PC-201507301550 MINGW64 ~/Desktop/LearnAndroid/AndroidDifficultAnalysis (master)
+$
+
+Administrator@PC-201507301550 MINGW64 ~/Desktop/LearnAndroid/AndroidDifficultAnalysis (master)
+$
+
+Administrator@PC-201507301550 MINGW64 ~/Desktop/LearnAndroid/AndroidDifficultAnalysis (master)
+$
+
+Administrator@PC-201507301550 MINGW64 ~/Desktop/LearnAndroid/AndroidDifficultAnalysis (master)
+$ git push https://github.com/ChurchLee/LearnGit master
+Counting objects: 128, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (64/64), done.
+Writing objects: 100% (128/128), 56.18 KiB | 0 bytes/s, done.
+Total 128 (delta 58), reused 128 (delta 58)
+remote: Resolving deltas: 100% (58/58), done.
+To https://github.com/ChurchLee/LearnGit
+ * [new branch]      master -> master
+
+Administrator@PC-201507301550 MINGW64 ~/Desktop/LearnAndroid/AndroidDifficultAna
+$ git pull origin master
+From https://github.com/miomin/AndroidDifficultAnalysis
+ * branch            master     -> FETCH_HEAD
+Already up-to-date.
+
+Administrator@PC-201507301550 MINGW64 ~/Desktop/LearnAndroid/AndroidDifficultAna
+$ git pull https://github.com/ChurchLee/LearnGit master
+From https://github.com/ChurchLee/LearnGit
+ * branch            master     -> FETCH_HEAD
+Already up-to-date.
+
+Administrator@PC-201507301550 MINGW64 ~/Desktop/LearnAndroid/AndroidDifficultAna
+$

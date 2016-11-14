@@ -1,0 +1,17 @@
+﻿快捷键：
+1.从layout布局文件跳转到string定义的资源文件是Ctrl+B
+2.注释/取消注释选中行的代码Ctrl+/
+3.注释/取消注释选中的代码块Ctrl+Shift+/
+4.强制转换Alt+Enter
+5.替换文本Ctrl+R
+6.查找文本Ctrl+F
+
+
+问题：
+1.layout界面无法显示，API太高，调低即可
+2.<!--textAllCaps字母是否全为大写，默认为true-->
+3.ExpandableListView如果子选项设置了点击事件，layout布局中android:id="@android:id/list"，id必须这样设置，
+类文件中引用则ExpandableListView listView = (ExpandableListView) findViewById(android.R.id.list);
+4.使用Log.i进行调试，打印需要的输出信息。
+5.虚拟机无法打开,可能端口被占了,关闭虚拟机的线程.
+6.考虑继承对Activity启动模式的影响
